@@ -9,7 +9,9 @@ function App() {
 
   return (
     <>
-      
+      <div className="hero-section">
+        Pulse AI
+      </div>
     </>
   )
 }
