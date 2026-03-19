@@ -29,7 +29,7 @@ function App() {
 
           {/* Fallback */}
           <Route
-            path="*"
+            path="/error"
             element={
               <div className="flex items-center justify-center h-screen text-xl">
                 404 - Page Not Found

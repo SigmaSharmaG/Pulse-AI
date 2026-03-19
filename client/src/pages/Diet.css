@@ -1,0 +1,98 @@
+
+.diet {
+  padding: 40px 5vw;
+  font-family: "Inter", sans-serif;
+  background: #f5f7fb;
+}
+
+/* Header */
+.diet-header h1 {
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.diet-header p {
+  margin-top: 8px;
+  color: #555;
+}
+
+/* Macro Cards */
+.macro-section {
+  margin-top: 40px;
+}
+
+.macros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.macro-card {
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.protein {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.carbs {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+}
+
+.fats {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.calories {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+/* Meals */
+.meals {
+  margin-top: 50px;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.meal-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+}
+
+/* AI Section */
+.ai-section {
+  margin-top: 50px;
+}
+
+.ai-cards {
+  display: grid;
+  gap: 15px;
+}
+
+.ai-card {
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  color: white;
+  padding: 18px;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+

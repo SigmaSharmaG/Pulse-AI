@@ -1,0 +1,303 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Utility container */
+.landing {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Hero Section === */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 5vw;
+  background: linear-gradient(135deg, #4f46e5, #2563eb);
+  color: #fff;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin-bottom: 35px;
+  font-weight: 500;
+  opacity: 0.9;
+  max-width: 450px;
+  line-height: 1.5;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+/* Buttons container */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 40px;
+  padding: 14px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, #ff5858, #f09819);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 88, 88, 0.6);
+}
+
+.btn.primary:hover {
+  background: linear-gradient(45deg, #f09819, #ff5858);
+  box-shadow: 0 10px 30px rgba(240, 152, 25, 0.8);
+  transform: translateY(-3px);
+}
+
+.btn.secondary {
+  background: white;
+  color: #2563eb;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn.secondary:hover {
+  color: #1d4ed8;
+  box-shadow: 0 10px 30px rgba(29, 78, 216, 0.5);
+  transform: translateY(-3px);
+}
+
+/* Hero form styling */
+.hero-form {
+  display: flex;
+  gap: 15px;
+  max-width: 480px;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.hero-form input[type="email"] {
+  flex: 1 1 220px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.hero-form input[type="email"]:focus {
+  box-shadow: 0 0 8px #f09819;
+}
+
+.signup-btn {
+  flex: 0 0 auto;
+  background: linear-gradient(45deg, #34d399, #059669);
+  color: white;
+  padding: 14px 30px;
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.6);
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.signup-btn:hover {
+  background: linear-gradient(45deg, #059669, #34d399);
+  box-shadow: 0 10px 30px rgba(5, 150, 105, 0.8);
+  transform: translateY(-3px);
+}
+
+/* Hero image placeholder */
+.hero-image {
+  flex: 1 1 400px;
+  height: 350px;
+  background: url("https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?auto=format&fit=crop&w=800&q=80") center/cover no-repeat;
+  border-radius: 40px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  filter: drop-shadow(0 10px 10px rgba(0,0,0,0.1));
+}
+
+/* === Features Section === */
+.features {
+  padding: 60px 10vw;
+  text-align: center;
+  background: #fff;
+}
+
+.features h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow:
+    0 1px 4px rgba(0,0,0,0.07),
+    0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.12),
+    0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* === CTA Section === */
+.cta {
+  background: linear-gradient(135deg, #4f46e5, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 60px 5vw;
+  border-radius: 40px 40px 0 0;
+  box-shadow: 0 -10px 40px rgba(37, 99, 235, 0.3);
+  margin-top: 60px;
+}
+
+.cta h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: -0.02em;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.cta .btn.large {
+  padding: 18px 50px;
+  font-size: 1.25rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(45deg, #ff5858, #f09819);
+  transition: all 0.3s ease;
+}
+
+.cta .btn.large:hover {
+  background: linear-gradient(45deg, #f09819, #ff5858);
+  box-shadow: 0 15px 40px rgba(240, 152, 25, 0.8);
+  transform: translateY(-4px);
+}
+
+/* === Footer === */
+.footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 25px 10vw;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  margin-top: auto;
+}
+
+/* === Responsive adjustments === */
+@media (max-width: 900px) {
+  .hero {
+    padding: 50px 4vw;
+    border-radius: 0 0 40px 40px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  .hero-form {
+    flex-direction: column;
+  }
+
+  .hero-form input[type="email"],
+  .signup-btn {
+    width: 100%;
+  }
+}
