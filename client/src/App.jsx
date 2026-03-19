@@ -12,6 +12,7 @@ function App() {
       <div className="hero-section">
         Pulse AI
       </div>
+      <nav>Login</nav>
     </>
   )
 }
