@@ -10,6 +10,9 @@ import Workout from './pages/Workout';
 import Diet from './pages/Diet';
 import Chat from './pages/Chat';
 import Progress from './pages/Progress.jsx';
+import Login from './pages/Login.jsx';
+import Signup from './pages/Signup.jsx';
+import Navbar from './components/Navbar.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +20,7 @@ function App() {
   return (
     <>
       <div className="wrapper">
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -26,10 +30,12 @@ function App() {
           <Route path="/diet" element={<Diet />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/progress" element={<Progress />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup/>} />
 
           {/* Fallback */}
           <Route
-            path="*"
+            path="/error"
             element={
               <div className="flex items-center justify-center h-screen text-xl">
                 404 - Page Not Found

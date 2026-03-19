@@ -1,0 +1,129 @@
+.workout {
+    padding: 40px 5vw;
+    /* background: #f4f7fb; */
+    background: #0f172a;
+    font-family: "Inter", sans-serif;
+    margin: 10px 0px 0px 0px;
+}
+
+.heading{
+    margin-bottom: 5px;
+}
+
+/* Header */
+.workout-header h1 {
+    font-size: 36px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #18127ebd, #115763ad);
+    -webkit-background-clip: text;
+    color: transparent;
+    color: wheat;
+}
+
+.workout-header p {
+    margin-top: 8px;
+    color: rgb(225, 225, 225);
+}
+
+/* Difficulty */
+.difficulty {
+    margin-top: 40px;
+}
+
+.difficulty-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.diff-card {
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.beginner {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.intermediate {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+}
+
+.advanced {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.diff-card:hover {
+    transform: scale(1.05);
+}
+
+/* Weekly Plan */
+.weekly-plan {
+    margin-top: 50px;
+}
+
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.day-card {
+    background: rgb(175, 9, 9);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.day-card:hover {
+    transform: translateY(-5px);
+}
+
+.rest {
+    /* background: linear-gradient(135deg, #94a3b8, #648b71); */
+    background-color: rgb(28, 183, 28);
+    color: white;
+}
+
+/* Exercises */
+.exercise-section {
+    margin-top: 50px;
+}
+
+.exercise-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.exercise-card {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* AI Section */
+.ai-workout {
+    margin-top: 50px;
+}
+
+.ai-cards {
+    display: grid;
+    gap: 15px;
+}
+
+.ai-card {
+    background: linear-gradient(135deg, #6366f1, #06b6d4);
+    color: white;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 500;
+}
